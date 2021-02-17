@@ -7,7 +7,7 @@
 | 2.0.x   | :white_check_mark: |
 | < 2.0   | :x:                |
 
-All development effort is currently put on v2.0, and earlier versions (there were a lot of them) are not maintained any more.
+All development effort is currently put on v2.0, and earlier versions (there were a lot of them) are not maintained anymore.
 
 ## Reporting a Vulnerability
 
