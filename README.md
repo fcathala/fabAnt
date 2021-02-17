@@ -13,4 +13,4 @@
 > *Ben N, Senior Salesforce Developer*
 
 The security policy is explained [here](https://github.com/fcathala/fabPack_PC/blob/master/SECURITY.md).
-During the upgrade to v2.0, find more details about this project [here](https://github.com/fcathala/fabPack_Mac/wiki).
+During the upgrade to v2.0, you can find more details about this project [here](https://github.com/fcathala/fabPack_Mac/wiki).
