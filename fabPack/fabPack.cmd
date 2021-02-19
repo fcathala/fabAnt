@@ -16,11 +16,14 @@ Rem
 Rem ===============================================================
 
 Rem ===============================================================
-Rem One-off config setup
+Rem Variables
 Rem ===============================================================
-Rem INSTALL=~/Lab/Private/fabPack/fabPack
-Rem RemINSTALL=~/fabPack
+Set ToolKit="salesforce_ant_50.0"
+
 Rem ===============================================================
+
+Rem
+TOOLKIT
 
 :Menu
     Cls
@@ -34,7 +37,6 @@ Rem ===============================================================
     Echo (3) Download components from manifest
     Echo (4) Download components from package
     Echo (5) Validate components on target
-    
     Echo (6) Create components on target
     Echo (7) Delete components on target
     Echo.
@@ -52,26 +54,53 @@ Rem ===============================================================
     If ErrorLevel ==1 Goto 1
 Goto Menu
 
-:7
-    Call bin\DeleteComponents.cmd
-Goto Menu  
-:6
-    Call bin\CreateComponents.cmd
-Goto Menu  
-:5
-    Call bin\ValidateComponents.cmd
-Goto Menu
-:4
-    Call bin\DownloadPackage.cmd
-Goto Menu
-:3
-    Call bin\DownloadManifest.cmd
+  ant
+
+    $ACTION
+
+    -buildfile "$INSTALL/system"
+    -Dtoolkit=%ToolKit%
+    -Dmdt="$MDT"
+    -Dsrc="$SRC"
+    -Dsf.usr=$USR
+    -Dsf.psw=$PSW
+    -Dsf.url=$URL
+    -l "$FILES/logs/$TIMESTAMP-$ACTION.log"
+
+
+
+      ACTION="deploy"
+      SRC="$FILES/src"
+      MDT="N/A"
+      TOOLKIT=$INSTALL/$VER
+
+      ACTION="delete"
+
+
+Echo %Date%_(%Time%)
+  less "$FILES/logs/$TIMESTAMP-$ACTION.log"
+
+
+:1
+    Call lib\testInstallation.cmd
 Goto Menu
 :2
-    Rem
+    Call lib\describeMetadata.cmd
 Goto Menu
-:1
-    Call bin\CheckInstallation.cmd
+:3
+    Call lib\retrieveCode.cmd 
 Goto Menu
+:4
+    Call lib\retrievePkg.cmd
+Goto Menu
+:5
+    Call lib\deployCodeCheckOnly.cmd
+Goto Menu
+:6
+    Call lib\deployCode.cmd
+Goto Menu  
+:7
+    Call lib\undeployCode.cmd
+Goto Menu  
 
 Rem ===============================================================
