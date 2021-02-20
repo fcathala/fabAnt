@@ -13,6 +13,21 @@
   <!-- Default batch size = 10 (bulk operations only) -->
   <property name="sf.batchsize" value="400"/>
 
+
+
+  <!-- Build the required folder structure if needed -->
+  <target name="folders">
+    <mkdir dir="metadata"/>
+  </target>
+
+
+  <tstamp>
+    <format property="fp.stamp" pattern="yyyyddMM-HHmmss" locale="en,GB" />
+  </tstamp>
+  <!-- Execution folder name -->
+  <property name="fp.folder" value="metadata" & "${fp.stamp}"/>
+
+
   <!-- Direct access to environment variables -->
   <!-- https://stackoverflow.com/questions/936793/define-ant-property-from-environment-with-default-value -->
   <property environment="env"/>
@@ -22,26 +37,15 @@
     resource="com/salesforce/antlib.xml"
     uri="antlib:com.salesforce">
     <classpath>
-<!--        <pathelement location="${toolkit}/ant-salesforce.jar" /> -->
         <pathelement location="./ant-salesforce.jar" /> 
     </classpath>
   </taskdef>
 
-  <!-- Build the required folder structure if needed -->
-  <target name="folders">
-    <mkdir dir="archives"/>
-  </target>
 
   <!-- Add extra information to the log -->
   <target name="log">
-    <tstamp>
-      <format property="current.time" pattern="MM/dd/yyyy HH:mm:ss" />
-      <format property="t.stamp" pattern="yyyyddMM-HHmmss" />
-    </tstamp>
     <echo message="-------------------------------------------------"/>
-    <echo message="fabPack log file: ${current.time}"/>
-    <echo message="-------------------------------------------------"/>
-    <echo message="folder prefix: ${t.stamp}"/>
+    <echo message="folder prefix: ${fp.stamp}"/>
     <echo message="-------------------------------------------------"/>
     <echo message="action: ${action}"/>
     <echo message="location: ${toolkit}/ant-salesforce.jar"/>

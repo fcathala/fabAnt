@@ -1,0 +1,32 @@
+
+retrieveXML:
+
+log:
+     [echo] -------------------------------------------------
+     [echo] fabPack log file: 06/27/2018 23:14:13
+     [echo] -------------------------------------------------
+     [echo] action: retrieveXML
+     [echo] location: /Users/fcathala/Lab/Private/fabPack/fabPack/v43.0/ant-salesforce.jar
+     [echo] serverurl: https://test.salesforce.com
+     [echo] maxPoll: 200
+     [echo] pollWaitMillis: 10000
+     [echo] packageNames: /Users/fcathala/Lab/Private/fabPack/test.project/fabPack/files/retrieve/package.xml
+     [echo] singlePackage: true
+     [echo] unpackaged: /Users/fcathala/Lab/Private/fabPack/test.project/fabPack/files/retrieve/package.xml
+     [echo] retrieveTarget: /Users/fcathala/Lab/Private/fabPack/test.project/fabPack/files/src
+     [echo] deployRoot: /Users/fcathala/Lab/Private/fabPack/test.project/fabPack/files/src
+     [echo] username: admin@partest.de.org.dev
+     [echo] password: KLF00-mghTZvSWOvs4X6h4rH6YBQQXtpGy
+
+cleanup:
+   [delete] Deleting directory /Users/fcathala/Lab/Private/fabPack/test.project/fabPack/files/src
+    [mkdir] Created dir: /Users/fcathala/Lab/Private/fabPack/test.project/fabPack/files/src
+[sf:retrieve] Request for a retrieve submitted successfully.
+[sf:retrieve] Request ID for the current retrieve task: 09S9E000001gNFMUA2
+[sf:retrieve] Waiting for server to finish processing the request...
+[sf:retrieve] Request Status: InProgress
+[sf:retrieve] Request Status: Succeeded
+[sf:retrieve] Finished request 09S9E000001gNFMUA2 successfully.
+
+BUILD SUCCESSFUL
+Total time: 12 seconds

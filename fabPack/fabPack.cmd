@@ -78,7 +78,7 @@ Goto Menu
 
 
 Echo %Date%_(%Time%)
-  less "$FILES/logs/$TIMESTAMP-$ACTION.log"
+Type "$FILES/logs/$TIMESTAMP-$ACTION.log"
 
 
 :1
