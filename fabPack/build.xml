@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<project xmlns:sf="antlib:com.salesforce" name="fabPack" default="validate" >
+<project xmlns:sf="antlib:com.salesforce" name="fabPack" default="describeMetadata" >
   <!-- fabPack - Ant Migration Tool build.xml -->
 
   <description>
@@ -7,61 +7,12 @@
   </description>
 
   <!-- Default Time-out = 200 * 10,000 =  33 minutes -->
-  <property name="sf.maxPoll" value="200"/>
+ <!-- <property name="sf.maxPoll" value="200"/> DEFINED IN THE PROPERTIES FILE -->
+
   <!-- Default waiting = 10,000 (10 seconds) -->
   <property name="sf.pollWaitMillis" value="10000"/>
   <!-- Default batch size = 10 (bulk operations only) -->
-  <property name="sf.batchsize" value="400"/>
-
-
-
-  <!-- Build the required folder structure if needed -->
-  <target name="folders">
-    <mkdir dir="metadata"/>
-  </target>
-
-
-  <tstamp>
-    <format property="fp.stamp" pattern="yyyyddMM-HHmmss" locale="en,GB" />
-  </tstamp>
-  <!-- Execution folder name -->
-  <property name="fp.folder" value="metadata" & "${fp.stamp}"/>
-
-
-  <!-- Direct access to environment variables -->
-  <!-- https://stackoverflow.com/questions/936793/define-ant-property-from-environment-with-default-value -->
-  <property environment="env"/>
-
-  <!-- Locate Salesforce's Ant jar in the same folder as build.xml -->
-  <taskdef
-    resource="com/salesforce/antlib.xml"
-    uri="antlib:com.salesforce">
-    <classpath>
-        <pathelement location="./ant-salesforce.jar" /> 
-    </classpath>
-  </taskdef>
-
-
-  <!-- Add extra information to the log -->
-  <target name="log">
-    <echo message="-------------------------------------------------"/>
-    <echo message="folder prefix: ${fp.stamp}"/>
-    <echo message="-------------------------------------------------"/>
-    <echo message="action: ${action}"/>
-    <echo message="location: ${toolkit}/ant-salesforce.jar"/>
-    <echo message="serverurl: ${sf.url}"/>
-    <echo message="maxPoll: ${sf.maxPoll}"/>
-    <echo message="pollWaitMillis: ${sf.pollWaitMillis}"/>
-    <echo message="packageNames: ${mdt}"/>
-    <echo message="singlePackage: true"/>
-    <echo message="unpackaged: ${mdt}"/>
-    <echo message="retrieveTarget: ${src}"/>
-    <echo message="deployRoot: ${src}"/>
-    <echo message="username: ${sf.usr}"/>
-    <!-- Uncomment for troubleshooting only
-    <echo message="password: ${sf.psw}"/> 
-    -->
-  </target>
+<!--  <property name="sf.batchsize" value="400"/> -->
 
   <!-- Reset folders -->
   <target name="cleanup">
@@ -76,9 +27,48 @@
     </copy>
   </target>
 
-  <!-- (2) Retrieve all supported metadata types -->
+
+  <!-- Execution folder name -->
+<!--
+  <property name="fp.folder" value="metadata" & "${fp.stamp}" />
+-->
+
+  <!-- Direct access to environment variables -->
+  <!-- https://stackoverflow.com/questions/936793/define-ant-property-from-environment-with-default-value -->
+  <property environment="env"/>
+
+  <!-- Locate Salesforce's Ant jar in the same folder as build.xml -->
+  <taskdef
+    resource="com/salesforce/antlib.xml"
+    uri="antlib:com.salesforce">
+    <classpath>
+        <pathelement location="./ant-salesforce.jar" /> 
+    </classpath>
+  </taskdef>
+
+  <!-- Add extra information to the log -->
+  <target name="log">
+    <echo message="-------------------------------------------------"/>
+    <echo message="folder prefix: ${fp.stamp}"/>
+    <echo message="-------------------------------------------------"/>
+    <echo message="action: ${action}"/>
+    <echo message="serverurl: ${sf.url}"/>
+    <echo message="maxPoll: ${sf.maxPoll}"/>
+    <echo message="pollWaitMillis: ${sf.pollWaitMillis}"/>
+    <echo message="packageNames: ${sf.pkgName}"/>
+    <echo message="singlePackage: true"/>
+    <echo message="unpackaged: ${mdt}"/>
+    <echo message="retrieveTarget: ${src}"/>
+    <echo message="deployRoot: ${src}"/>
+    <echo message="username: ${sf.username}"/>
+    <!-- Uncomment for troubleshooting only
+    <echo message="password: ${sf.password}"/> 
+    -->
+    <echo message="session ID: ${sf.sessionId}"/>
+  </target>
+
 	<!-- Retrieve the information on all supported metadata type -->
-  <target name="describeMetadata">
+  <target name="describeMetadata" description="(2) Retrieve all supported metadata types">
     <sf:describeMetadata
       username="${sf.username}"
       password="${sf.password}"
@@ -87,9 +77,8 @@
     />
   </target>
 
-  <!-- (3) Download components from manifest -->
   <!-- Shows retrieving code; only succeeds if done after deployCode -->
-  <target name="retrieveCode">
+  <target name="retrieveCode" description="(3) Download components from manifest">
     <!-- Retrieve the contents listed in the file codepkg/package.xml into the codepkg directory -->
     <sf:retrieve
       username="${sf.username}"
@@ -102,9 +91,8 @@
     />
   </target>
 
-  <!--  (4) Download components from package -->
   <!-- Retrieve metadata for all the packages specified under packageNames -->
-  <target name="retrievePkg">
+  <target name="retrievePkg" description="(4) Download components from package">
     <sf:retrieve
       username="${sf.username}"
       password="${sf.password}"
@@ -116,9 +104,8 @@
       />
   </target>
 
-  <!-- (5) Validate components on target --> 
   <!-- Shows check only; never actually saves to the server -->
-  <target name="deployCodeCheckOnly">
+  <target name="deployCodeCheckOnly" description="(5) Validate components on target">
     <sf:deploy
       username="${sf.username}"
       password="${sf.password}"
@@ -130,9 +117,8 @@
       />
   </target>
 
-  <!-- (6) Create components on target -->
   <!-- Shows deploying code & running tests for code in directory -->
-  <target name="deployCode">
+  <target name="deployCode" description="(6) Create components on target">
     <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
     <sf:deploy
       username="${sf.username}"
@@ -148,7 +134,7 @@
 
   <!-- (7) Delete components on target -->
   <!-- Shows removing code; only succeeds if done after deployCode -->
-  <target name="undeployCode">
+  <target name="undeployCode" description="(7) Delete components on target">
     <sf:deploy
       username="${sf.username}"
       password="${sf.password}"

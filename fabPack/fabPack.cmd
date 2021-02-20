@@ -18,12 +18,17 @@ Rem ===============================================================
 Rem ===============================================================
 Rem Variables
 Rem ===============================================================
-Set ToolKit="salesforce_ant_50.0"
-
+    Set LaunchTime=%Date%_(%Time%)
+Rem Echo %LaunchTime%
 Rem ===============================================================
 
-Rem
-TOOLKIT
+Rem ===============================================================
+Rem Create the package download tree
+    Md metadata
+    Md metadata\package
+    Md metadata\library
+    Rem > NULL
+Rem ===============================================================
 
 :Menu
     Cls
@@ -39,12 +44,14 @@ TOOLKIT
     Echo (5) Validate components on target
     Echo (6) Create components on target
     Echo (7) Delete components on target
+    Echo (8) Exit
     Echo.
     Echo -------------------------------------    
     Echo.
 
-    Choice /C:123456 /N /M "Please, type the selection number from 1 to 6."
+    Choice /C:12345678 /N /M "Please, type the selection number from 1 to 8."
 
+    If ErrorLevel ==8 Goto 8
     If ErrorLevel ==7 Goto 7
     If ErrorLevel ==6 Goto 6
     If ErrorLevel ==5 Goto 5
@@ -53,33 +60,6 @@ TOOLKIT
     If ErrorLevel ==2 Goto 2
     If ErrorLevel ==1 Goto 1
 Goto Menu
-
-  ant
-
-    $ACTION
-
-    -buildfile "$INSTALL/system"
-    -Dtoolkit=%ToolKit%
-    -Dmdt="$MDT"
-    -Dsrc="$SRC"
-    -Dsf.usr=$USR
-    -Dsf.psw=$PSW
-    -Dsf.url=$URL
-    -l "$FILES/logs/$TIMESTAMP-$ACTION.log"
-
-
-
-      ACTION="deploy"
-      SRC="$FILES/src"
-      MDT="N/A"
-      TOOLKIT=$INSTALL/$VER
-
-      ACTION="delete"
-
-
-Echo %Date%_(%Time%)
-Type "$FILES/logs/$TIMESTAMP-$ACTION.log"
-
 
 :1
     Call lib\testInstallation.cmd
@@ -102,5 +82,10 @@ Goto Menu
 :7
     Call lib\undeployCode.cmd
 Goto Menu  
+:8
+    Goto End
+Goto Menu 
 
 Rem ===============================================================
+
+:End
