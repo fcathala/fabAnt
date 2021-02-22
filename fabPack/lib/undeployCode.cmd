@@ -1,5 +1,11 @@
-Cls
-Echo.
-Echo DeleteComponents
-Echo.
-Pause
+:Main
+    Cls
+    Echo.
+    Echo ---------------------------------------------------------
+    Echo  fabPack - (7) Delete components on target
+    Echo ---------------------------------------------------------
+    Echo.
+    Echo ---------------------------------------------------------
+    Echo.
+
+  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"

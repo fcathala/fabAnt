@@ -1,19 +1,29 @@
 :Main
     Cls
     Echo.
-    Echo -------------------------------------
-    Echo fabPack - (1) Check installation    
-    Echo -------------------------------------    
+    Echo ---------------------------------------------------------
+    Echo  fabPack - (1) Check installation    
+    Echo ---------------------------------------------------------
     Echo.
     git --version
     Echo.
-
-Rem DEBUG: Ant -version throws the batch away... WHY?
-Rem ant -version
-Rem Pause
-
+    Echo ---------------------------------------------------------
+    Call ant -version
+    Echo.
+    Echo ---------------------------------------------------------
     java -version
     Echo.
-    Echo -------------------------------------    
+    Echo ---------------------------------------------------------
+    Echo Ant_Home:  %Ant_Home%
     Echo.
-Pause
+    Echo ---------------------------------------------------------
+    Echo Path:      %Path%
+    Echo.
+    Echo ---------------------------------------------------------
+    Echo PathExt:   %PATHEXT%
+    Echo.
+    Echo ---------------------------------------------------------
+    Echo.
+
+  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"
+

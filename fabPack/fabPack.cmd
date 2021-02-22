@@ -1,6 +1,6 @@
 Echo OFF
 Rem ===============================================================
-Rem fabPack_PC: Salesforce Packaging Utility for Windows
+Rem fabPack_PC: Packaging Utility for Salesforce Professionals
 Rem
 Rem fabPack lets you download packages from one Salesforce org
 Rem and upload it into another one. It also helps you capture
@@ -18,35 +18,38 @@ Rem ===============================================================
 Rem ===============================================================
 Rem Variables
 Rem ===============================================================
-    Set LaunchTime=%Date%_(%Time%)
-Rem Echo %LaunchTime%
+    Rem Just in case "Enables Command Extensions" 
+    SetLocal EnableExtensions
+
+    Rem File name friendly launch time
+    Set TimeStamp=%Date:~-4,4%%Date:~-10,2%%Date:~-7,2%_%Time:~0,2%%Time:~3,2%%Time:~6,2%
 Rem ===============================================================
 
 Rem ===============================================================
 Rem Create the package download tree
-    Md metadata
-    Md metadata\package
-    Md metadata\library
+    If Not Exist ..\metadata Md ..\metadata
+    If Not Exist ..\metadata\archive Md ..\metadata\archive
+    If Not Exist ..\metadata\latest_package Md ..\metadata\latest_package
     Rem > NULL
 Rem ===============================================================
 
 :Menu
     Cls
     Echo.
-    Echo -------------------------------------
-    Echo fabPack    
-    Echo -------------------------------------    
+    Echo ---------------------------------------------------------
+    Echo  fabPack - Packaging Utility for Salesforce Professionals    
+    Echo ---------------------------------------------------------
     Echo.
-    Echo (1) Check installation
-    Echo (2) Retrieve all supported metadata types
-    Echo (3) Download components from manifest
-    Echo (4) Download components from package
-    Echo (5) Validate components on target
-    Echo (6) Create components on target
-    Echo (7) Delete components on target
-    Echo (8) Exit
+    Echo  (1) Check installation
+    Echo  (2) Retrieve all supported metadata types
+    Echo  (3) Download components from manifest
+    Echo  (4) Download components from package
+    Echo  (5) Validate components on target
+    Echo  (6) Deploy components on target
+    Echo  (7) Delete components on target
+    Echo  (8) Exit
     Echo.
-    Echo -------------------------------------    
+    Echo ---------------------------------------------------------
     Echo.
 
     Choice /C:12345678 /N /M "Please, type the selection number from 1 to 8."
@@ -62,8 +65,7 @@ Rem ===============================================================
 Goto Menu
 
 :1
-    Call lib\testInstallation.cmd
-Goto Menu
+    Call lib\testInstallation.cmdGoto Menu
 :2
     Call lib\describeMetadata.cmd
 Goto Menu

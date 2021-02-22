@@ -1,0 +1,1520 @@
+Adding reference: ant.PropertyHelper
+Detected Java version: 1.9 in: C:\Program Files\Zulu\zulu-15
+Detected OS: Windows 10
+Adding reference: ant.ComponentHelper
+Setting ro project property: sf.password -> ILikeD0nut$ZK5DEQJdrRSyR7sj1HYQRjId
+Setting ro project property: sf.serverurl -> https://fabpack--dev.my.salesforce.com
+Setting ro project property: sf.pkgName -> ChangeSet_001
+Setting ro project property: sf.username -> admin@fabpack.de.org.dev
+Setting ro project property: sf.maxPoll -> 20
+Setting ro project property: ant.file -> C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\build.xml
+Setting ro project property: ant.file.type -> file
+Setting ro project property: ant.project.invoked-targets -> describeMetadata
+Adding reference: ant.projectHelper
+Adding reference: ant.parsing.context
+Adding reference: ant.targets
+parsing buildfile C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\build.xml with URI = file:/C:/Users/fcathala/Google%20Drive/Fab/Code/fabPack_PC/repo/fabPack/build.xml
+Setting ro project property: ant.project.name -> fabPack
+Adding reference: fabPack
+Setting ro project property: ant.project.default-target -> describeMetadata
+Setting ro project property: ant.file.fabPack -> C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\build.xml
+Setting ro project property: ant.file.type.fabPack -> file
+Project base dir set to: C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack
+ +Target: 
+ +Target: describeMetadata
+ +Target: retrieveCode
+ +Target: retrievePkg
+ +Target: deployCodeCheckOnly
+ +Target: deployCode
+ +Target: undeployCode
+Adding reference: ant.LocalProperties
+parsing buildfile jar:file:/C:/Program%20Files%20(x86)/Apache/Ant-1.9.7/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/C:/Program%20Files%20(x86)/Apache/Ant-1.9.7/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+ [property] Loading Environment env.
+Setting project property: env.NUMBER_OF_PROCESSORS -> 4
+Setting project property: env.USERPROFILE -> C:\Users\fcathala
+Setting project property: env.FP_NO_HOST_CHECK -> NO
+Setting project property: env.ULTRAMON_LANGDIR -> C:\Program Files\UltraMon\Resources\en
+Setting project property: env.PROCESSOR_ARCHITECTURE -> AMD64
+Setting project property: env.TimeStamp -> 20212202_125911
+Setting project property: env.TVT -> C:\Program Files (x86)\Lenovo
+Setting project property: env.FPS_BROWSER_APP_PROFILE_STRING -> Internet Explorer
+Setting project property: env.CommonProgramW6432 -> C:\Program Files\Common Files
+Setting project property: env.OS -> Windows_NT
+Setting project property: env.SystemRoot -> C:\WINDOWS
+Setting project property: env.USERDOMAIN -> FAB-LAPTOP
+Setting project property: env.=:: -> ::\
+Setting project property: env.ComSpec -> C:\WINDOWS\system32\cmd.exe
+Setting project property: env.ANT_CMD_LINE_ARGS ->  describeMetadata -propertyfile "org.down.properties" -v -d -l "..\metadata\archive\20212202_125911-describeMetadata\log.txt"
+Setting project property: env.ProgramFiles -> C:\Program Files
+Setting project property: env.ALLUSERSPROFILE -> C:\ProgramData
+Setting project property: env.PROMPT -> $P$G
+Setting project property: env.SESSIONNAME -> Console
+Setting project property: env._JAVACMD -> java.exe
+Setting project property: env.LOCALAPPDATA -> C:\Users\fcathala\AppData\Local
+Setting project property: env.USERDOMAIN_ROAMINGPROFILE -> FAB-LAPTOP
+Setting project property: env.ANT_HOME -> C:\PROGRA~2\Apache\ANT-19~1.7
+Setting project property: env.PROCESSOR_REVISION -> 2a07
+Setting project property: env.windows_tracing_logfile -> C:\BVTBin\Tests\installpackage\csilogfile.log
+Setting project property: env.PSModulePath -> C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules\
+Setting project property: env.windir -> C:\WINDOWS
+Setting project property: env.windows_tracing_flags -> 3
+Setting project property: env.PROCESSOR_IDENTIFIER -> Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+Setting project property: env.=C: -> C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack
+Setting project property: env.DriverData -> C:\Windows\System32\Drivers\DriverData
+Setting project property: env.ProgramW6432 -> C:\Program Files
+Setting project property: env.CURL_HOME -> C:\PROGRA~1\cURL
+Setting project property: env.CommonProgramFiles -> C:\Program Files\Common Files
+Setting project property: env.PUBLIC -> C:\Users\Public
+Setting project property: env.CommonProgramFiles(x86) -> C:\Program Files (x86)\Common Files
+Setting project property: env.PATHEXT -> .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;
+Setting project property: env._USE_CLASSPATH -> no
+Setting project property: env.COMPUTERNAME -> FAB-LAPTOP
+Setting project property: env.HOMEPATH -> \Users\fcathala
+Setting project property: env.AXISCPP_DEPLOY_DL6 -> C:\Program Files (x86)\Jitterbit Cloud Data Loader\axis
+Setting project property: env.SystemDrive -> C:
+Setting project property: env.APPDATA -> C:\Users\fcathala\AppData\Roaming
+Setting project property: env.ProgramData -> C:\ProgramData
+Setting project property: env.USERNAME -> fcathala
+Setting project property: env.PROCESSOR_LEVEL -> 6
+Setting project property: env.Path -> C:\Program Files\Zulu\zulu-15\bin\;C:\WINDOWS;C:\WINDOWS\system32;%JAVA_HOME%\bin;C:\PROGRA~2\Apache\ANT-19~1.7\bin;C:\PROGRA~1\cURL\bin;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Jitterbit Cloud Data Loader\bin;C:\Program Files\Git\cmd;C:\Users\fcathala\AppData\Local\Microsoft\WindowsApps;C:\Users\fcathala\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fcathala\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\GitHub CLI\;C:\ProgramData\fcathala\GitHubDesktop\bin
+Setting project property: env.HOMEDRIVE -> C:
+Setting project property: env.TMP -> C:\Users\fcathala\AppData\Local\Temp
+Setting project property: env.ProgramFiles(x86) -> C:\Program Files (x86)
+Setting project property: env.LOGONSERVER -> \\FAB-LAPTOP
+Setting project property: env.FPS_BROWSER_USER_PROFILE_STRING -> Default
+Setting project property: env.JITTERBIT_DL6_HOME -> C:\Program Files (x86)\Jitterbit Cloud Data Loader\
+Setting project property: env.=ExitCode -> 00000002
+Setting project property: env.TEMP -> C:\Users\fcathala\AppData\Local\Temp
+Setting project property: env.OneDrive -> C:\OneDrive
+parsing buildfile jar:file:/C:/Users/fcathala/Google%20Drive/Fab/Code/fabPack_PC/repo/fabPack/ant-salesforce.jar!/com/salesforce/antlib.xml with URI = jar:file:/C:/Users/fcathala/Google%20Drive/Fab/Code/fabPack_PC/repo/fabPack/ant-salesforce.jar!/com/salesforce/antlib.xml from a zip file
+Finding class com.salesforce.ant.CompileAndTest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/CompileAndTest.class
+Finding class com.salesforce.ant.SFDCAntTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/SFDCAntTask.class
+Class org.apache.tools.ant.Task loaded from parent loader (parentFirst)
+Class com.salesforce.ant.SFDCAntTask loaded from ant loader (parentFirst)
+Class com.salesforce.ant.CompileAndTest loaded from ant loader (parentFirst)
+Class java.lang.Object loaded from parent loader (parentFirst)
+Class java.lang.Throwable loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.ConnectionException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/ConnectionException.class
+Class java.lang.Exception loaded from parent loader (parentFirst)
+Class com.sforce.ws.ConnectionException loaded from ant loader (parentFirst)
+Class org.apache.tools.ant.BuildException loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.partner.fault.LoginFault
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/fault/LoginFault.class
+Finding class com.sforce.soap.partner.fault.ILoginFault
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/fault/ILoginFault.class
+Finding class com.sforce.soap.partner.fault.IApiFault
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/fault/IApiFault.class
+Class com.sforce.soap.partner.fault.IApiFault loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.fault.ILoginFault loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.fault.ApiFault
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/fault/ApiFault.class
+Finding class com.sforce.ws.bind.XMLizable
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/XMLizable.class
+Class com.sforce.ws.bind.XMLizable loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.SoapFaultException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/SoapFaultException.class
+Class com.sforce.ws.SoapFaultException loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.fault.ApiFault loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.fault.LoginFault loaded from ant loader (parentFirst)
+Class java.lang.CharSequence loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.partner.IGetUserInfoResult
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IGetUserInfoResult.class
+Class com.sforce.soap.partner.IGetUserInfoResult loaded from ant loader (parentFirst)
+Class java.io.IOException loaded from parent loader (parentFirst)
+Class java.util.List loaded from parent loader (parentFirst)
+Class java.io.InputStream loaded from parent loader (parentFirst)
+Class java.io.FileInputStream loaded from parent loader (parentFirst)
+ +Datatype antlib:com.salesforce:compileAndTest com.salesforce.ant.CompileAndTest
+Finding class com.salesforce.ant.RestDeployTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/RestDeployTask.class
+Finding class com.salesforce.ant.DeployTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/DeployTask.class
+Finding class com.salesforce.ant.SFDCMDAPIAntTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/SFDCMDAPIAntTask.class
+Class com.salesforce.ant.SFDCMDAPIAntTask loaded from ant loader (parentFirst)
+Class com.salesforce.ant.DeployTask loaded from ant loader (parentFirst)
+Class com.salesforce.ant.RestDeployTask loaded from ant loader (parentFirst)
+Finding class com.salesforce.ant.SFDCMDAPIAntTask$StatusResult
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/SFDCMDAPIAntTask$StatusResult.class
+Class com.salesforce.ant.SFDCMDAPIAntTask$StatusResult loaded from ant loader (parentFirst)
+Class java.lang.AssertionError loaded from parent loader (parentFirst)
+Class java.util.Set loaded from parent loader (parentFirst)
+Finding class org.apache.http.entity.mime.content.ContentBody
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar org/apache/http/entity/mime/content/ContentBody.class
+Finding class org.apache.http.entity.mime.content.ContentDescriptor
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar org/apache/http/entity/mime/content/ContentDescriptor.class
+Class org.apache.http.entity.mime.content.ContentDescriptor loaded from ant loader (parentFirst)
+Class org.apache.http.entity.mime.content.ContentBody loaded from ant loader (parentFirst)
+Finding class org.apache.http.client.methods.HttpUriRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar org/apache/http/client/methods/HttpUriRequest.class
+Finding class org.apache.http.HttpRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar org/apache/http/HttpRequest.class
+Finding class org.apache.http.HttpMessage
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar org/apache/http/HttpMessage.class
+Class org.apache.http.HttpMessage loaded from ant loader (parentFirst)
+Class org.apache.http.HttpRequest loaded from ant loader (parentFirst)
+Class org.apache.http.client.methods.HttpUriRequest loaded from ant loader (parentFirst)
+Class java.lang.Class loaded from parent loader (parentFirst)
+ +Datatype antlib:com.salesforce:restDeploy com.salesforce.ant.RestDeployTask
+ +Datatype antlib:com.salesforce:deploy com.salesforce.ant.DeployTask
+Finding class com.salesforce.ant.RetrieveTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/RetrieveTask.class
+Class com.salesforce.ant.RetrieveTask loaded from ant loader (parentFirst)
+Class java.io.FileNotFoundException loaded from parent loader (parentFirst)
+Class java.io.ByteArrayInputStream loaded from parent loader (parentFirst)
+ +Datatype antlib:com.salesforce:retrieve com.salesforce.ant.RetrieveTask
+Finding class com.salesforce.ant.BulkRetrieveTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/BulkRetrieveTask.class
+Class com.salesforce.ant.BulkRetrieveTask loaded from ant loader (parentFirst)
+ +Datatype antlib:com.salesforce:bulkRetrieve com.salesforce.ant.BulkRetrieveTask
+Finding class com.salesforce.ant.ListMetadataTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/ListMetadataTask.class
+Class com.salesforce.ant.ListMetadataTask loaded from ant loader (parentFirst)
+Class java.io.OutputStream loaded from parent loader (parentFirst)
+Class java.io.FileOutputStream loaded from parent loader (parentFirst)
+ +Datatype antlib:com.salesforce:listMetadata com.salesforce.ant.ListMetadataTask
+Finding class com.salesforce.ant.DescribeMetadataTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/DescribeMetadataTask.class
+Class com.salesforce.ant.DescribeMetadataTask loaded from ant loader (parentFirst)
+ +Datatype antlib:com.salesforce:describeMetadata com.salesforce.ant.DescribeMetadataTask
+Finding class com.salesforce.ant.CancelDeployTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/CancelDeployTask.class
+Class com.salesforce.ant.CancelDeployTask loaded from ant loader (parentFirst)
+ +Datatype antlib:com.salesforce:cancelDeploy com.salesforce.ant.CancelDeployTask
+Finding class com.salesforce.ant.DeployRecentValidationTask
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/DeployRecentValidationTask.class
+Class com.salesforce.ant.DeployRecentValidationTask loaded from ant loader (parentFirst)
+ +Datatype antlib:com.salesforce:deployRecentValidation com.salesforce.ant.DeployRecentValidationTask
+Setting ro project property: ant.project.invoked-targets -> describeMetadata
+Attempting to create object of type org.apache.tools.ant.helper.DefaultExecutor
+Adding reference: ant.executor
+Build sequence for target(s) `describeMetadata' is [describeMetadata]
+Complete build sequence is [describeMetadata, retrieveCode, deployCodeCheckOnly, deployCode, undeployCode, retrievePkg, ]
+
+describeMetadata:
+[antlib:com.salesforce] Could not load definitions from resource com/salesforce/antlib.xml. It could not be found.
+Finding class com.salesforce.ant.ConnectionFactory
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/salesforce/ant/ConnectionFactory.class
+Class com.salesforce.ant.ConnectionFactory loaded from ant loader (parentFirst)
+Class java.lang.String loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.apex.SoapConnection
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/apex/SoapConnection.class
+Class com.sforce.soap.apex.SoapConnection loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.MetadataConnection
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/MetadataConnection.class
+Class com.sforce.soap.metadata.MetadataConnection loaded from ant loader (parentFirst)
+Class java.lang.Double loaded from parent loader (parentFirst)
+Class java.lang.System loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.ConnectorConfig
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/ConnectorConfig.class
+Class com.sforce.ws.ConnectorConfig loaded from ant loader (parentFirst)
+Class java.lang.IllegalArgumentException loaded from parent loader (parentFirst)
+Class java.lang.InstantiationException loaded from parent loader (parentFirst)
+Class java.lang.IllegalAccessException loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.ConnectorConfig$TeeOutputStream
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/ConnectorConfig$TeeOutputStream.class
+Class com.sforce.ws.ConnectorConfig$TeeOutputStream loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.MessageHandler
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/MessageHandler.class
+Class com.sforce.ws.MessageHandler loaded from ant loader (parentFirst)
+Class java.util.Map loaded from parent loader (parentFirst)
+Class java.net.SocketAddress loaded from parent loader (parentFirst)
+Class java.net.InetSocketAddress loaded from parent loader (parentFirst)
+Class java.util.ArrayList loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.transport.JdkHttpTransport
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/JdkHttpTransport.class
+Finding class com.sforce.ws.transport.Transport
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/Transport.class
+Class com.sforce.ws.transport.Transport loaded from ant loader (parentFirst)
+Class com.sforce.ws.transport.JdkHttpTransport loaded from ant loader (parentFirst)
+Class java.lang.StringBuilder loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.partner.Connector
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/Connector.class
+Class com.sforce.soap.partner.Connector loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.PartnerConnection
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/PartnerConnection.class
+Class com.sforce.soap.partner.PartnerConnection loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.sobject.ISObject
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/sobject/ISObject.class
+Class com.sforce.soap.partner.sobject.ISObject loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IMergeRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IMergeRequest.class
+Class com.sforce.soap.partner.IMergeRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IProcessRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IProcessRequest.class
+Class com.sforce.soap.partner.IProcessRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IDataCategoryGroupSobjectTypePair
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IDataCategoryGroupSobjectTypePair.class
+Class com.sforce.soap.partner.IDataCategoryGroupSobjectTypePair loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.INavigateFlowInterviewRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/INavigateFlowInterviewRequest.class
+Class com.sforce.soap.partner.INavigateFlowInterviewRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IRenderEmailTemplateRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IRenderEmailTemplateRequest.class
+Class com.sforce.soap.partner.IRenderEmailTemplateRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IPerformQuickActionRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IPerformQuickActionRequest.class
+Class com.sforce.soap.partner.IPerformQuickActionRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IDescribeSoqlListViewsRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IDescribeSoqlListViewsRequest.class
+Class com.sforce.soap.partner.IDescribeSoqlListViewsRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IRenderStoredEmailTemplateRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IRenderStoredEmailTemplateRequest.class
+Class com.sforce.soap.partner.IRenderStoredEmailTemplateRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IOwnerChangeOption
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IOwnerChangeOption.class
+Class com.sforce.soap.partner.IOwnerChangeOption loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IResumeFlowInterviewRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IResumeFlowInterviewRequest.class
+Class com.sforce.soap.partner.IResumeFlowInterviewRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.ILogInfo
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILogInfo.class
+Class com.sforce.soap.partner.ILogInfo loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.ILimitInfo
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILimitInfo.class
+Class com.sforce.soap.partner.ILimitInfo loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.ILeadConvert
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILeadConvert.class
+Class com.sforce.soap.partner.ILeadConvert loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IEmail
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IEmail.class
+Class com.sforce.soap.partner.IEmail loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IStartFlowInterviewRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IStartFlowInterviewRequest.class
+Class com.sforce.soap.partner.IStartFlowInterviewRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IExecuteListViewRequest
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IExecuteListViewRequest.class
+Class com.sforce.soap.partner.IExecuteListViewRequest loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.IPackageVersion
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IPackageVersion.class
+Class com.sforce.soap.partner.IPackageVersion loaded from ant loader (parentFirst)
+Class javax.xml.namespace.QName loaded from parent loader (parentFirst)
+Class java.util.HashMap loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.partner.QueryOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/QueryOptions_element.class
+Finding class com.sforce.soap.partner.IQueryOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IQueryOptions_element.class
+Class com.sforce.soap.partner.IQueryOptions_element loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.bind.SoapHeaderObject
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/SoapHeaderObject.class
+Class com.sforce.ws.bind.SoapHeaderObject loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.QueryOptions_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.PatchHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/PatchHeader_element.class
+Finding class com.sforce.soap.partner.IPatchHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IPatchHeader_element.class
+Class com.sforce.soap.partner.IPatchHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.PatchHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.AssignmentRuleHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/AssignmentRuleHeader_element.class
+Finding class com.sforce.soap.partner.IAssignmentRuleHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IAssignmentRuleHeader_element.class
+Class com.sforce.soap.partner.IAssignmentRuleHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.AssignmentRuleHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.DisableFeedTrackingHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/DisableFeedTrackingHeader_element.class
+Finding class com.sforce.soap.partner.IDisableFeedTrackingHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IDisableFeedTrackingHeader_element.class
+Class com.sforce.soap.partner.IDisableFeedTrackingHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.DisableFeedTrackingHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.EmailHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/EmailHeader_element.class
+Finding class com.sforce.soap.partner.IEmailHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IEmailHeader_element.class
+Class com.sforce.soap.partner.IEmailHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.EmailHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.LocaleOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/LocaleOptions_element.class
+Finding class com.sforce.soap.partner.ILocaleOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILocaleOptions_element.class
+Class com.sforce.soap.partner.ILocaleOptions_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.LocaleOptions_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.DebuggingHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/DebuggingHeader_element.class
+Finding class com.sforce.soap.partner.IDebuggingHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IDebuggingHeader_element.class
+Class com.sforce.soap.partner.IDebuggingHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.DebuggingHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.OwnerChangeOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/OwnerChangeOptions_element.class
+Finding class com.sforce.soap.partner.IOwnerChangeOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IOwnerChangeOptions_element.class
+Class com.sforce.soap.partner.IOwnerChangeOptions_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.OwnerChangeOptions_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.AllowFieldTruncationHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/AllowFieldTruncationHeader_element.class
+Finding class com.sforce.soap.partner.IAllowFieldTruncationHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IAllowFieldTruncationHeader_element.class
+Class com.sforce.soap.partner.IAllowFieldTruncationHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.AllowFieldTruncationHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.LimitInfoHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/LimitInfoHeader_element.class
+Finding class com.sforce.soap.partner.ILimitInfoHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILimitInfoHeader_element.class
+Class com.sforce.soap.partner.ILimitInfoHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.LimitInfoHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.DebuggingInfo_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/DebuggingInfo_element.class
+Finding class com.sforce.soap.partner.IDebuggingInfo_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IDebuggingInfo_element.class
+Class com.sforce.soap.partner.IDebuggingInfo_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.DebuggingInfo_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.PackageVersionHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/PackageVersionHeader_element.class
+Finding class com.sforce.soap.partner.IPackageVersionHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IPackageVersionHeader_element.class
+Class com.sforce.soap.partner.IPackageVersionHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.PackageVersionHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.AllOrNoneHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/AllOrNoneHeader_element.class
+Finding class com.sforce.soap.partner.IAllOrNoneHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IAllOrNoneHeader_element.class
+Class com.sforce.soap.partner.IAllOrNoneHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.AllOrNoneHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.MruHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/MruHeader_element.class
+Finding class com.sforce.soap.partner.IMruHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IMruHeader_element.class
+Class com.sforce.soap.partner.IMruHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.MruHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.SessionHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/SessionHeader_element.class
+Finding class com.sforce.soap.partner.ISessionHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ISessionHeader_element.class
+Class com.sforce.soap.partner.ISessionHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.SessionHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.CallOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/CallOptions_element.class
+Finding class com.sforce.soap.partner.ICallOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ICallOptions_element.class
+Class com.sforce.soap.partner.ICallOptions_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.CallOptions_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.StreamingEnabledHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/StreamingEnabledHeader_element.class
+Finding class com.sforce.soap.partner.IStreamingEnabledHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IStreamingEnabledHeader_element.class
+Class com.sforce.soap.partner.IStreamingEnabledHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.StreamingEnabledHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.LoginScopeHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/LoginScopeHeader_element.class
+Finding class com.sforce.soap.partner.ILoginScopeHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILoginScopeHeader_element.class
+Class com.sforce.soap.partner.ILoginScopeHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.LoginScopeHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.UserTerritoryDeleteHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/UserTerritoryDeleteHeader_element.class
+Finding class com.sforce.soap.partner.IUserTerritoryDeleteHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IUserTerritoryDeleteHeader_element.class
+Class com.sforce.soap.partner.IUserTerritoryDeleteHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.UserTerritoryDeleteHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.DuplicateRuleHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/DuplicateRuleHeader_element.class
+Finding class com.sforce.soap.partner.IDuplicateRuleHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/IDuplicateRuleHeader_element.class
+Class com.sforce.soap.partner.IDuplicateRuleHeader_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.DuplicateRuleHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.bind.TypeMapper
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/TypeMapper.class
+Class com.sforce.ws.bind.TypeMapper loaded from ant loader (parentFirst)
+Class java.lang.ClassNotFoundException loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.bind.HTMLResponseException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/HTMLResponseException.class
+Class com.sforce.ws.bind.HTMLResponseException loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.bind.TypeMapper$PartialArrayException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/TypeMapper$PartialArrayException.class
+Class com.sforce.ws.bind.TypeMapper$PartialArrayException loaded from ant loader (parentFirst)
+Class java.lang.NoSuchFieldException loaded from parent loader (parentFirst)
+Class java.lang.Integer loaded from parent loader (parentFirst)
+Class java.lang.Boolean loaded from parent loader (parentFirst)
+Class java.math.BigDecimal loaded from parent loader (parentFirst)
+Class java.lang.Long loaded from parent loader (parentFirst)
+Class java.lang.Float loaded from parent loader (parentFirst)
+Class java.util.HashSet loaded from parent loader (parentFirst)
+Class java.lang.Byte loaded from parent loader (parentFirst)
+Class java.lang.Short loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.bind.CalendarCodec
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/CalendarCodec.class
+Class com.sforce.ws.bind.CalendarCodec loaded from ant loader (parentFirst)
+Class java.lang.NumberFormatException loaded from parent loader (parentFirst)
+Class java.text.SimpleDateFormat loaded from parent loader (parentFirst)
+Class java.util.TimeZone loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.bind.DateCodec
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/DateCodec.class
+Class com.sforce.ws.bind.DateCodec loaded from ant loader (parentFirst)
+Class java.util.Calendar loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.types.Time
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/types/Time.class
+Class java.io.Serializable loaded from parent loader (parentFirst)
+Class com.sforce.ws.types.Time loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.wsdl.SfdcApiType
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/wsdl/SfdcApiType.class
+Class java.lang.Enum loaded from parent loader (parentFirst)
+Class com.sforce.ws.wsdl.SfdcApiType loaded from ant loader (parentFirst)
+Class java.util.Date loaded from parent loader (parentFirst)
+Class java.util.GregorianCalendar loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.bind.TypeInfo
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/bind/TypeInfo.class
+Class com.sforce.ws.bind.TypeInfo loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.transport.SoapConnection
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/SoapConnection.class
+Class com.sforce.ws.transport.SoapConnection loaded from ant loader (parentFirst)
+Class java.lang.NoSuchMethodException loaded from parent loader (parentFirst)
+Class java.lang.reflect.InvocationTargetException loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.transport.SoapConnection$SessionTimedOutException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/SoapConnection$SessionTimedOutException.class
+Class com.sforce.ws.transport.SoapConnection$SessionTimedOutException loaded from ant loader (parentFirst)
+Class java.net.SocketTimeoutException loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.parser.PullParserException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/PullParserException.class
+Class com.sforce.ws.parser.PullParserException loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.Login_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/Login_element.class
+Finding class com.sforce.soap.partner.ILogin_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILogin_element.class
+Class com.sforce.soap.partner.ILogin_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.Login_element loaded from ant loader (parentFirst)
+Class java.util.Iterator loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.partner.LoginResponse_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/LoginResponse_element.class
+Finding class com.sforce.soap.partner.ILoginResponse_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILoginResponse_element.class
+Class com.sforce.soap.partner.ILoginResponse_element loaded from ant loader (parentFirst)
+Class com.sforce.soap.partner.LoginResponse_element loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.transport.LimitingInputStream
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/LimitingInputStream.class
+Class com.sforce.ws.transport.LimitingInputStream loaded from ant loader (parentFirst)
+Class java.util.zip.GZIPInputStream loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.transport.LimitingOutputStream
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/LimitingOutputStream.class
+Class com.sforce.ws.transport.LimitingOutputStream loaded from ant loader (parentFirst)
+Class java.util.zip.GZIPOutputStream loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.transport.MessageHandlerOutputStream
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/transport/MessageHandlerOutputStream.class
+Class com.sforce.ws.transport.MessageHandlerOutputStream loaded from ant loader (parentFirst)
+Class java.net.URL loaded from parent loader (parentFirst)
+Class java.net.Proxy loaded from parent loader (parentFirst)
+Class java.net.HttpURLConnection loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.tools.VersionInfo
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/tools/VersionInfo.class
+Class com.sforce.ws.tools.VersionInfo loaded from ant loader (parentFirst)
+Class java.util.Map$Entry loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.parser.XmlOutputStream
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/XmlOutputStream.class
+Class java.lang.AutoCloseable loaded from parent loader (parentFirst)
+Class com.sforce.ws.parser.XmlOutputStream loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.parser.MXSerializer
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/MXSerializer.class
+Class com.sforce.ws.parser.MXSerializer loaded from ant loader (parentFirst)
+Class java.lang.IllegalStateException loaded from parent loader (parentFirst)
+Class java.io.Writer loaded from parent loader (parentFirst)
+Class java.io.OutputStreamWriter loaded from parent loader (parentFirst)
+Class java.lang.Runtime loaded from parent loader (parentFirst)
+Class java.time.OffsetDateTime loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.types.OffsetDate
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/types/OffsetDate.class
+Class com.sforce.ws.types.OffsetDate loaded from ant loader (parentFirst)
+Class java.time.OffsetTime loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.parser.XmlInputStream
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/XmlInputStream.class
+Class com.sforce.ws.parser.XmlInputStream loaded from ant loader (parentFirst)
+Finding class com.sforce.ws.parser.XmlPullParserException
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/XmlPullParserException.class
+Class com.sforce.ws.parser.XmlPullParserException loaded from ant loader (parentFirst)
+Class java.lang.InternalError loaded from parent loader (parentFirst)
+Finding class com.sforce.ws.parser.MXParser
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/MXParser.class
+Finding class com.sforce.ws.parser.XmlPullParser
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/ws/parser/XmlPullParser.class
+Class com.sforce.ws.parser.XmlPullParser loaded from ant loader (parentFirst)
+Class com.sforce.ws.parser.MXParser loaded from ant loader (parentFirst)
+Class java.io.UnsupportedEncodingException loaded from parent loader (parentFirst)
+Class java.io.Reader loaded from parent loader (parentFirst)
+Class java.io.InputStreamReader loaded from parent loader (parentFirst)
+Class java.lang.IndexOutOfBoundsException loaded from parent loader (parentFirst)
+Class java.io.EOFException loaded from parent loader (parentFirst)
+Finding class com.sforce.soap.partner.ILoginResult
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/ILoginResult.class
+Class com.sforce.soap.partner.ILoginResult loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.LoginResult
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/LoginResult.class
+Class com.sforce.soap.partner.LoginResult loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.partner.GetUserInfoResult
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/partner/GetUserInfoResult.class
+Class com.sforce.soap.partner.GetUserInfoResult loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.Connector
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/Connector.class
+Class com.sforce.soap.metadata.Connector loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.SessionHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/SessionHeader_element.class
+Class com.sforce.soap.metadata.SessionHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.DebuggingInfo_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/DebuggingInfo_element.class
+Class com.sforce.soap.metadata.DebuggingInfo_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.DebuggingHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/DebuggingHeader_element.class
+Class com.sforce.soap.metadata.DebuggingHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.CallOptions_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/CallOptions_element.class
+Class com.sforce.soap.metadata.CallOptions_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.AllOrNoneHeader_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/AllOrNoneHeader_element.class
+Class com.sforce.soap.metadata.AllOrNoneHeader_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.DescribeMetadata_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/DescribeMetadata_element.class
+Class com.sforce.soap.metadata.DescribeMetadata_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.DescribeMetadataResponse_element
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/DescribeMetadataResponse_element.class
+Class com.sforce.soap.metadata.DescribeMetadataResponse_element loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.DescribeMetadataResult
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/DescribeMetadataResult.class
+Class com.sforce.soap.metadata.DescribeMetadataResult loaded from ant loader (parentFirst)
+Finding class com.sforce.soap.metadata.DescribeMetadataObject
+Loaded from C:\Users\fcathala\Google Drive\Fab\Code\fabPack_PC\repo\fabPack\ant-salesforce.jar com/sforce/soap/metadata/DescribeMetadataObject.class
+Class com.sforce.soap.metadata.DescribeMetadataObject loaded from ant loader (parentFirst)
+Class java.lang.reflect.Array loaded from parent loader (parentFirst)
+Class jdk.internal.reflect.ConstructorAccessorImpl loaded from parent loader (parentFirst)
+Class java.lang.StringBuffer loaded from parent loader (parentFirst)
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: InstalledPackage
+[sf:describeMetadata] DirName: installedPackages
+[sf:describeMetadata] Suffix: installedPackage
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomLabels
+[sf:describeMetadata] DirName: labels
+[sf:describeMetadata] Suffix: labels
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: CustomLabel,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: StaticResource
+[sf:describeMetadata] DirName: staticresources
+[sf:describeMetadata] Suffix: resource
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Scontrol
+[sf:describeMetadata] DirName: scontrols
+[sf:describeMetadata] Suffix: scf
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Certificate
+[sf:describeMetadata] DirName: certs
+[sf:describeMetadata] Suffix: crt
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: LightningMessageChannel
+[sf:describeMetadata] DirName: messageChannels
+[sf:describeMetadata] Suffix: messageChannel
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: LightningComponentBundle
+[sf:describeMetadata] DirName: lwc
+[sf:describeMetadata] Suffix: null
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AuraDefinitionBundle
+[sf:describeMetadata] DirName: aura
+[sf:describeMetadata] Suffix: null
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApexComponent
+[sf:describeMetadata] DirName: components
+[sf:describeMetadata] Suffix: component
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApexPage
+[sf:describeMetadata] DirName: pages
+[sf:describeMetadata] Suffix: page
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Queue
+[sf:describeMetadata] DirName: queues
+[sf:describeMetadata] Suffix: queue
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CaseSubjectParticle
+[sf:describeMetadata] DirName: CaseSubjectParticles
+[sf:describeMetadata] Suffix: CaseSubjectParticle
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: InboundNetworkConnection
+[sf:describeMetadata] DirName: inboundNetworkConnections
+[sf:describeMetadata] Suffix: inboundNetworkConnection
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: OutboundNetworkConnection
+[sf:describeMetadata] DirName: outboundNetworkConnections
+[sf:describeMetadata] Suffix: outboundNetworkConnection
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ExternalDataSource
+[sf:describeMetadata] DirName: dataSources
+[sf:describeMetadata] Suffix: dataSource
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: NamedCredential
+[sf:describeMetadata] DirName: namedCredentials
+[sf:describeMetadata] Suffix: namedCredential
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ExternalServiceRegistration
+[sf:describeMetadata] DirName: externalServiceRegistrations
+[sf:describeMetadata] Suffix: externalServiceRegistration
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Role
+[sf:describeMetadata] DirName: roles
+[sf:describeMetadata] Suffix: role
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Group
+[sf:describeMetadata] DirName: groups
+[sf:describeMetadata] Suffix: group
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: GlobalValueSet
+[sf:describeMetadata] DirName: globalValueSets
+[sf:describeMetadata] Suffix: globalValueSet
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: StandardValueSet
+[sf:describeMetadata] DirName: standardValueSets
+[sf:describeMetadata] Suffix: standardValueSet
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomPermission
+[sf:describeMetadata] DirName: customPermissions
+[sf:describeMetadata] Suffix: customPermission
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomObject
+[sf:describeMetadata] DirName: objects
+[sf:describeMetadata] Suffix: object
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: CustomField,Index,BusinessProcess,RecordType,CompactLayout,WebLink,ValidationRule,SharingReason,ListView,FieldSet,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ReportType
+[sf:describeMetadata] DirName: reportTypes
+[sf:describeMetadata] Suffix: reportType
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Report
+[sf:describeMetadata] DirName: reports
+[sf:describeMetadata] Suffix: report
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: true
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Dashboard
+[sf:describeMetadata] DirName: dashboards
+[sf:describeMetadata] Suffix: dashboard
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: true
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AnalyticSnapshot
+[sf:describeMetadata] DirName: analyticSnapshots
+[sf:describeMetadata] Suffix: snapshot
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomFeedFilter
+[sf:describeMetadata] DirName: feedFilters
+[sf:describeMetadata] Suffix: feedFilter
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Layout
+[sf:describeMetadata] DirName: layouts
+[sf:describeMetadata] Suffix: layout
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Document
+[sf:describeMetadata] DirName: documents
+[sf:describeMetadata] Suffix: null
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: true
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomPageWebLink
+[sf:describeMetadata] DirName: weblinks
+[sf:describeMetadata] Suffix: weblink
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Letterhead
+[sf:describeMetadata] DirName: letterhead
+[sf:describeMetadata] Suffix: letter
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EmailTemplate
+[sf:describeMetadata] DirName: email
+[sf:describeMetadata] Suffix: email
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: true
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: QuickAction
+[sf:describeMetadata] DirName: quickActions
+[sf:describeMetadata] Suffix: quickAction
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: FlexiPage
+[sf:describeMetadata] DirName: flexipages
+[sf:describeMetadata] Suffix: flexipage
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomTab
+[sf:describeMetadata] DirName: tabs
+[sf:describeMetadata] Suffix: tab
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomApplicationComponent
+[sf:describeMetadata] DirName: customApplicationComponents
+[sf:describeMetadata] Suffix: customApplicationComponent
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomApplication
+[sf:describeMetadata] DirName: applications
+[sf:describeMetadata] Suffix: app
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomMetadata
+[sf:describeMetadata] DirName: customMetadata
+[sf:describeMetadata] Suffix: md
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Flow
+[sf:describeMetadata] DirName: flows
+[sf:describeMetadata] Suffix: flow
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: FlowDefinition
+[sf:describeMetadata] DirName: flowDefinitions
+[sf:describeMetadata] Suffix: flowDefinition
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ContentAsset
+[sf:describeMetadata] DirName: contentassets
+[sf:describeMetadata] Suffix: asset
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Workflow
+[sf:describeMetadata] DirName: workflows
+[sf:describeMetadata] Suffix: workflow
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: WorkflowFieldUpdate,WorkflowKnowledgePublish,WorkflowTask,WorkflowAlert,WorkflowSend,WorkflowOutboundMessage,WorkflowRule,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AssignmentRules
+[sf:describeMetadata] DirName: assignmentRules
+[sf:describeMetadata] Suffix: assignmentRules
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: AssignmentRule,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AutoResponseRules
+[sf:describeMetadata] DirName: autoResponseRules
+[sf:describeMetadata] Suffix: autoResponseRules
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: AutoResponseRule,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EscalationRules
+[sf:describeMetadata] DirName: escalationRules
+[sf:describeMetadata] Suffix: escalationRules
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: EscalationRule,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PostTemplate
+[sf:describeMetadata] DirName: postTemplates
+[sf:describeMetadata] Suffix: postTemplate
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApprovalProcess
+[sf:describeMetadata] DirName: approvalProcesses
+[sf:describeMetadata] Suffix: approvalProcess
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: HomePageComponent
+[sf:describeMetadata] DirName: homePageComponents
+[sf:describeMetadata] Suffix: homePageComponent
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: HomePageLayout
+[sf:describeMetadata] DirName: homePageLayouts
+[sf:describeMetadata] Suffix: homePageLayout
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomObjectTranslation
+[sf:describeMetadata] DirName: objectTranslations
+[sf:describeMetadata] Suffix: objectTranslation
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: GlobalValueSetTranslation
+[sf:describeMetadata] DirName: globalValueSetTranslations
+[sf:describeMetadata] Suffix: globalValueSetTranslation
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: StandardValueSetTranslation
+[sf:describeMetadata] DirName: standardValueSetTranslations
+[sf:describeMetadata] Suffix: standardValueSetTranslation
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApexClass
+[sf:describeMetadata] DirName: classes
+[sf:describeMetadata] Suffix: cls
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApexTrigger
+[sf:describeMetadata] DirName: triggers
+[sf:describeMetadata] Suffix: trigger
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApexTestSuite
+[sf:describeMetadata] DirName: testSuites
+[sf:describeMetadata] Suffix: testSuite
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Profile
+[sf:describeMetadata] DirName: profiles
+[sf:describeMetadata] Suffix: profile
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PermissionSet
+[sf:describeMetadata] DirName: permissionsets
+[sf:describeMetadata] Suffix: permissionset
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: MutingPermissionSet
+[sf:describeMetadata] DirName: mutingpermissionsets
+[sf:describeMetadata] Suffix: mutingpermissionset
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PermissionSetGroup
+[sf:describeMetadata] DirName: permissionsetgroups
+[sf:describeMetadata] Suffix: permissionsetgroup
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ProfilePasswordPolicy
+[sf:describeMetadata] DirName: profilePasswordPolicies
+[sf:describeMetadata] Suffix: profilePasswordPolicy
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ProfileSessionSetting
+[sf:describeMetadata] DirName: profileSessionSettings
+[sf:describeMetadata] Suffix: profileSessionSetting
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: MyDomainDiscoverableLogin
+[sf:describeMetadata] DirName: myDomainDiscoverableLogins
+[sf:describeMetadata] Suffix: myDomainDiscoverableLogin
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: BlacklistedConsumer
+[sf:describeMetadata] DirName: blacklistedConsumers
+[sf:describeMetadata] Suffix: blacklistedConsumer
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: OauthCustomScope
+[sf:describeMetadata] DirName: oauthcustomscopes
+[sf:describeMetadata] Suffix: oauthcustomscope
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: UserProvisioningConfig
+[sf:describeMetadata] DirName: userProvisioningConfigs
+[sf:describeMetadata] Suffix: userProvisioningConfig
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: DataCategoryGroup
+[sf:describeMetadata] DirName: datacategorygroups
+[sf:describeMetadata] Suffix: datacategorygroup
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: RemoteSiteSetting
+[sf:describeMetadata] DirName: remoteSiteSettings
+[sf:describeMetadata] Suffix: remoteSite
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CspTrustedSite
+[sf:describeMetadata] DirName: cspTrustedSites
+[sf:describeMetadata] Suffix: cspTrustedSite
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: RedirectWhitelistUrl
+[sf:describeMetadata] DirName: redirectWhitelistUrls
+[sf:describeMetadata] Suffix: redirectWhitelistUrl
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: MatchingRules
+[sf:describeMetadata] DirName: matchingRules
+[sf:describeMetadata] Suffix: matchingRule
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: MatchingRule,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: DuplicateRule
+[sf:describeMetadata] DirName: duplicateRules
+[sf:describeMetadata] Suffix: duplicateRule
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CleanDataService
+[sf:describeMetadata] DirName: cleanDataServices
+[sf:describeMetadata] Suffix: cleanDataService
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomIndex
+[sf:describeMetadata] DirName: customindex
+[sf:describeMetadata] Suffix: indx
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AuthProvider
+[sf:describeMetadata] DirName: authproviders
+[sf:describeMetadata] Suffix: authprovider
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EclairGeoData
+[sf:describeMetadata] DirName: eclair
+[sf:describeMetadata] Suffix: geodata
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ChannelLayout
+[sf:describeMetadata] DirName: channelLayouts
+[sf:describeMetadata] Suffix: channelLayout
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomSite
+[sf:describeMetadata] DirName: sites
+[sf:describeMetadata] Suffix: site
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ApexEmailNotifications
+[sf:describeMetadata] DirName: apexEmailNotifications
+[sf:describeMetadata] Suffix: notifications
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: SharingRules
+[sf:describeMetadata] DirName: sharingRules
+[sf:describeMetadata] Suffix: sharingRules
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: SharingOwnerRule,SharingCriteriaRule,SharingGuestRule,************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: SharingSet
+[sf:describeMetadata] DirName: sharingSets
+[sf:describeMetadata] Suffix: sharingSet
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: IframeWhiteListUrlSettings
+[sf:describeMetadata] DirName: iframeWhiteListUrlSettings
+[sf:describeMetadata] Suffix: iframeWhiteListUrlSettings
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Community
+[sf:describeMetadata] DirName: communities
+[sf:describeMetadata] Suffix: community
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ChatterExtension
+[sf:describeMetadata] DirName: ChatterExtensions
+[sf:describeMetadata] Suffix: ChatterExtension
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AIApplication
+[sf:describeMetadata] DirName: aiApplications
+[sf:describeMetadata] Suffix: ai
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AIApplicationConfig
+[sf:describeMetadata] DirName: aiApplicationConfigs
+[sf:describeMetadata] Suffix: aiapplicationconfig
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: MLPredictionDefinition
+[sf:describeMetadata] DirName: mlPredictions
+[sf:describeMetadata] Suffix: mlPrediction
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: MLDataDefinition
+[sf:describeMetadata] DirName: mlDataDefinitions
+[sf:describeMetadata] Suffix: mlDataDefinition
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: BatchProcessJobDefinition
+[sf:describeMetadata] DirName: batchProcessJobDefinitions
+[sf:describeMetadata] Suffix: batchProcessJobDefinition
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PlatformEventChannel
+[sf:describeMetadata] DirName: platformEventChannels
+[sf:describeMetadata] Suffix: platformEventChannel
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PlatformEventChannelMember
+[sf:describeMetadata] DirName: platformEventChannelMembers
+[sf:describeMetadata] Suffix: platformEventChannelMember
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CallCenter
+[sf:describeMetadata] DirName: callCenters
+[sf:describeMetadata] Suffix: callCenter
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: DocumentType
+[sf:describeMetadata] DirName: documentTypes
+[sf:describeMetadata] Suffix: documentType
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CanvasMetadata
+[sf:describeMetadata] DirName: Canvases
+[sf:describeMetadata] Suffix: Canvas
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: MobileApplicationDetail
+[sf:describeMetadata] DirName: MobileApplicationDetails
+[sf:describeMetadata] Suffix: MobileApplicationDetail
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomNotificationType
+[sf:describeMetadata] DirName: notificationtypes
+[sf:describeMetadata] Suffix: notiftype
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ConnectedApp
+[sf:describeMetadata] DirName: connectedApps
+[sf:describeMetadata] Suffix: connectedApp
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AppMenu
+[sf:describeMetadata] DirName: appMenus
+[sf:describeMetadata] Suffix: appMenu
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: NotificationTypeConfig
+[sf:describeMetadata] DirName: notificationTypeConfig
+[sf:describeMetadata] Suffix: config
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: DelegateGroup
+[sf:describeMetadata] DirName: delegateGroups
+[sf:describeMetadata] Suffix: delegateGroup
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: BrandingSet
+[sf:describeMetadata] DirName: brandingSets
+[sf:describeMetadata] Suffix: brandingSet
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: SiteDotCom
+[sf:describeMetadata] DirName: siteDotComSites
+[sf:describeMetadata] Suffix: site
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: NetworkBranding
+[sf:describeMetadata] DirName: networkBranding
+[sf:describeMetadata] Suffix: networkBranding
+[sf:describeMetadata] HasMetaFile: true
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: FlowCategory
+[sf:describeMetadata] DirName: flowCategories
+[sf:describeMetadata] Suffix: flowCategory
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: LightningBolt
+[sf:describeMetadata] DirName: lightningBolts
+[sf:describeMetadata] Suffix: lightningBolt
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: LightningExperienceTheme
+[sf:describeMetadata] DirName: lightningExperienceThemes
+[sf:describeMetadata] Suffix: lightningExperienceTheme
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: LightningOnboardingConfig
+[sf:describeMetadata] DirName: lightningOnboardingConfigs
+[sf:describeMetadata] Suffix: lightningOnboardingConfig
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CustomHelpMenuSection
+[sf:describeMetadata] DirName: customHelpMenuSections
+[sf:describeMetadata] Suffix: customHelpMenuSection
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Prompt
+[sf:describeMetadata] DirName: prompts
+[sf:describeMetadata] Suffix: prompt
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ManagedContentType
+[sf:describeMetadata] DirName: managedContentTypes
+[sf:describeMetadata] Suffix: managedContentType
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: SamlSsoConfig
+[sf:describeMetadata] DirName: samlssoconfigs
+[sf:describeMetadata] Suffix: samlssoconfig
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CorsWhitelistOrigin
+[sf:describeMetadata] DirName: corsWhitelistOrigins
+[sf:describeMetadata] Suffix: corsWhitelistOrigin
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: ActionLinkGroupTemplate
+[sf:describeMetadata] DirName: actionLinkGroupTemplates
+[sf:describeMetadata] Suffix: actionLinkGroupTemplate
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: SynonymDictionary
+[sf:describeMetadata] DirName: synonymDictionaries
+[sf:describeMetadata] Suffix: synonymDictionary
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PathAssistant
+[sf:describeMetadata] DirName: pathAssistants
+[sf:describeMetadata] Suffix: pathAssistant
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AnimationRule
+[sf:describeMetadata] DirName: animationRules
+[sf:describeMetadata] Suffix: animationRule
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: LeadConvertSettings
+[sf:describeMetadata] DirName: LeadConvertSettings
+[sf:describeMetadata] Suffix: LeadConvertSetting
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PlatformCachePartition
+[sf:describeMetadata] DirName: cachePartitions
+[sf:describeMetadata] Suffix: cachePartition
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: TopicsForObjects
+[sf:describeMetadata] DirName: topicsForObjects
+[sf:describeMetadata] Suffix: topicsForObjects
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: RecommendationStrategy
+[sf:describeMetadata] DirName: recommendationStrategies
+[sf:describeMetadata] Suffix: recommendationStrategy
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EntityImplements
+[sf:describeMetadata] DirName: entityImplements
+[sf:describeMetadata] Suffix: entityImplements
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EmailServicesFunction
+[sf:describeMetadata] DirName: emailservices
+[sf:describeMetadata] Suffix: xml
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: PaymentGatewayProvider
+[sf:describeMetadata] DirName: paymentGatewayProviders
+[sf:describeMetadata] Suffix: paymentGatewayProvider
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: GatewayProviderPaymentMethodType
+[sf:describeMetadata] DirName: gatewayProviderPaymentMethodTypes
+[sf:describeMetadata] Suffix: gatewayProviderPaymentMethodType
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: RecordActionDeployment
+[sf:describeMetadata] DirName: recordActionDeployments
+[sf:describeMetadata] Suffix: deployment
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: SalesAgreementSettings
+[sf:describeMetadata] DirName: salesAgreementSettings
+[sf:describeMetadata] Suffix: salesAgreementSetting
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AcctMgrTargetSettings
+[sf:describeMetadata] DirName: acctMgrTargetSettings
+[sf:describeMetadata] Suffix: acctMgrTargetSetting
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: AccountForecastSettings
+[sf:describeMetadata] DirName: AccountForecastSettings
+[sf:describeMetadata] Suffix: accountForecastSetting
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EmbeddedServiceConfig
+[sf:describeMetadata] DirName: EmbeddedServiceConfig
+[sf:describeMetadata] Suffix: EmbeddedServiceConfig
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EmbeddedServiceBranding
+[sf:describeMetadata] DirName: EmbeddedServiceBranding
+[sf:describeMetadata] Suffix: EmbeddedServiceBranding
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EmbeddedServiceFlowConfig
+[sf:describeMetadata] DirName: EmbeddedServiceFlowConfig
+[sf:describeMetadata] Suffix: EmbeddedServiceFlowConfig
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: EmbeddedServiceMenuSettings
+[sf:describeMetadata] DirName: EmbeddedServiceMenuSettings
+[sf:describeMetadata] Suffix: EmbeddedServiceMenuSettings
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: CallCoachingMediaProvider
+[sf:describeMetadata] DirName: callCoachingMediaProviders
+[sf:describeMetadata] Suffix: callCoachingMediaProvider
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+[sf:describeMetadata] ************************************************************
+[sf:describeMetadata] XMLName: Settings
+[sf:describeMetadata] DirName: settings
+[sf:describeMetadata] Suffix: settings
+[sf:describeMetadata] HasMetaFile: false
+[sf:describeMetadata] InFolder: false
+[sf:describeMetadata] ChildObjects: ************************************************************
+
+BUILD SUCCESSFUL
+Total time: 4 seconds
