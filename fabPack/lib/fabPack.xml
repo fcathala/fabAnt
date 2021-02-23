@@ -15,7 +15,7 @@
     resource="com/salesforce/antlib.xml"
     uri="antlib:com.salesforce">
     <classpath>
-        <pathelement location="ant-salesforce.jar" /> 
+        <pathelement location="../jar/ant-salesforce.jar" /> 
     </classpath>
   </taskdef>
 
@@ -36,8 +36,8 @@
       password="${sf.password}"
       serverurl="${sf.serverurl}"
       maxPoll="${sf.maxPoll}"
-      retrieveTarget="codepkg"
-      unpackaged="codepkg/package.xml"
+      retrieveTarget="metadata\temp"
+      unpackaged="metadata\temp\package.xml"
     />
   </target>
 
@@ -48,7 +48,7 @@
       password="${sf.password}"
       serverurl="${sf.serverurl}"
       maxPoll="${sf.maxPoll}"
-      retrieveTarget="retrieveOutput"
+      retrieveTarget="metadata\temp"
       packageNames="${sf.pkgName}"
       />
   </target>
@@ -60,20 +60,19 @@
       password="${sf.password}"
       serverurl="${sf.serverurl}"
       maxPoll="${sf.maxPoll}"
-      deployRoot="codepkg"
+      deployRoot="metadata\temp"
       checkOnly="true"
       />
   </target>
 
   <!-- Shows deploying code & running tests for code in directory -->
-  <target name="deployCode" description="(6) Create components on target">
-    <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
+  <target name="deployCode" description="(6) Deploy components on target">
     <sf:deploy
       username="${sf.username}"
       password="${sf.password}"
       serverurl="${sf.serverurl}"
       maxPoll="${sf.maxPoll}"
-      deployRoot="codepkg"
+      deployRoot="metadata\temp"
       testLevel="RunLocalTests"
       rollbackOnError="true"
       />
@@ -86,7 +85,7 @@
       password="${sf.password}"
       serverurl="${sf.serverurl}"
       maxPoll="${sf.maxPoll}"
-      deployRoot="removecodepkg"
+      deployRoot="metadata\temp"
       />
   </target>
 

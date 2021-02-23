@@ -16,78 +16,80 @@ Rem
 Rem ===============================================================
 
 Rem ===============================================================
-Rem Variables
+Rem Initialisation
 Rem ===============================================================
-    Rem Just in case "Enables Command Extensions" 
-    SetLocal EnableExtensions
+  Rem Just in case "Enables Command Extensions" 
+  SetLocal EnableExtensions
 
-    Rem File name friendly launch time
-    Set TimeStamp=%Date:~-4,4%%Date:~-10,2%%Date:~-7,2%_%Time:~0,2%%Time:~3,2%%Time:~6,2%
-Rem ===============================================================
-
-Rem ===============================================================
-Rem Create the package download tree
-    If Not Exist ..\metadata Md ..\metadata
-    If Not Exist ..\metadata\archive Md ..\metadata\archive
-    If Not Exist ..\metadata\latest_package Md ..\metadata\latest_package
-    Rem > NULL
+  Rem Create the package download tree
+  If Not Exist metadata Md metadata
+  If Not Exist metadata\archive Md metadata\archive
+  If Not Exist metadata\temp Md metadata\temp
 Rem ===============================================================
 
 :Menu
-    Cls
-    Echo.
-    Echo ---------------------------------------------------------
-    Echo  fabPack - Packaging Utility for Salesforce Professionals    
-    Echo ---------------------------------------------------------
-    Echo.
-    Echo  (1) Check installation
-    Echo  (2) Retrieve all supported metadata types
-    Echo  (3) Download components from manifest
-    Echo  (4) Download components from package
-    Echo  (5) Validate components on target
-    Echo  (6) Deploy components on target
-    Echo  (7) Delete components on target
-    Echo  (8) Exit
-    Echo.
-    Echo ---------------------------------------------------------
-    Echo.
+  Rem ===========================================================
+  Rem Variables
+  Rem ===========================================================
+  Rem File name friendly launch time
+  Set TimeStamp=%Date:~-4,4%%Date:~-10,2%%Date:~-7,2%_%Time:~0,2%%Time:~3,2%%Time:~6,2%
+  Rem ===========================================================
 
-    Choice /C:12345678 /N /M "Please, type the selection number from 1 to 8."
+  Cls
+  Echo.
+  Echo ----------------------------------------------------------
+  Echo  fabPack - Packaging Utility for Salesforce Professionals    
+  Echo ----------------------------------------------------------
+  Echo.
+  Echo  (1) Check installation
+  Echo  (2) Retrieve all supported metadata types
+  Echo  (3) Download components from manifest
+  Echo  (4) Download components from the package
+  Echo  (5) Validate components on the target
+  Echo  (6) Deploy components on the target
+  Echo  (7) Delete components on the target
+  Echo  (8) Quit
+  Echo.
+  Echo ----------------------------------------------------------
+  Echo.
 
-    If ErrorLevel ==8 Goto 8
-    If ErrorLevel ==7 Goto 7
-    If ErrorLevel ==6 Goto 6
-    If ErrorLevel ==5 Goto 5
-    If ErrorLevel ==4 Goto 4
-    If ErrorLevel ==3 Goto 3
-    If ErrorLevel ==2 Goto 2
-    If ErrorLevel ==1 Goto 1
+  Choice /C:12345678 /N /M "Please, type the selection number from 1 to 8."
+
+  If ErrorLevel ==8 Goto 8
+  If ErrorLevel ==7 Goto 7
+  If ErrorLevel ==6 Goto 6
+  If ErrorLevel ==5 Goto 5
+  If ErrorLevel ==4 Goto 4
+  If ErrorLevel ==3 Goto 3
+  If ErrorLevel ==2 Goto 2
+  If ErrorLevel ==1 Goto 1
 Goto Menu
 
 :1
-    Call lib\testInstallation.cmdGoto Menu
+  Call lib\testInstallation.cmd
+Goto Menu
 :2
-    Call lib\describeMetadata.cmd
+  Call lib\describeMetadata.cmd
 Goto Menu
 :3
-    Call lib\retrieveCode.cmd 
+  Call lib\retrieveCode.cmd 
 Goto Menu
 :4
-    Call lib\retrievePkg.cmd
+  Call lib\retrievePkg.cmd
 Goto Menu
 :5
-    Call lib\deployCodeCheckOnly.cmd
+  Call lib\deployCodeCheckOnly.cmd
 Goto Menu
 :6
-    Call lib\deployCode.cmd
+  Call lib\deployCode.cmd
 Goto Menu  
 :7
-    Call lib\undeployCode.cmd
+  Call lib\undeployCode.cmd
 Goto Menu  
 :8
-    Goto End
+  Goto End
 Goto Menu 
 
-Rem ===============================================================
+  Rem ===========================================================
 
 :End
