@@ -14,7 +14,7 @@
   Call ant describeMetadata -buildfile "lib\fabPack.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
 
   Rem Keep a copy of the result
-  XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-retrievePkg /S /Y
+  XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-describeMetadata /S /Y
 
   Rem Display the log file
   Type metadata\temp\log.txt
@@ -23,4 +23,5 @@
   Echo ----------------------------------------------------------
   Echo.
 
-  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"
+  Rem End of function
+  Pause

@@ -7,9 +7,11 @@
   Echo.
 
   Rem All folders operations
-  Rd metadata\temp /S /Q
-  Md metadata\temp
+  If Not Exist metadata Md metadata
+  If Not Exist metadata\archive Md metadata\archive
   Md metadata\archive\%TimeStamp%-retrievePkg
+  Rd metadata\temp /S /Q
+  If Not Exist metadata\temp Md metadata\temp
 
   Call ant retrievePkg -buildfile "lib\fabPack.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
 
@@ -22,5 +24,6 @@
   Echo.
   Echo ----------------------------------------------------------
   Echo.
-
-  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"
+  
+  Rem End of function
+  Pause

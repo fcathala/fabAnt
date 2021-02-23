@@ -7,8 +7,11 @@
   Echo.
 
   Rem All folders operations
-  If Not Exist metadata\temp\package.xml Goto ErrorMissingManifest
+  If Not Exist metadata Md metadata
+  If Not Exist metadata\archive Md metadata\archive
   Md metadata\archive\%TimeStamp%-retrieveCode
+  If Not Exist metadata\temp Md metadata\temp
+  If Not Exist metadata\temp\package.xml Goto ErrorMissingFile
 
   Call ant retrieveCode -buildfile "lib\fabPack.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
 
@@ -22,16 +25,18 @@
   Echo ----------------------------------------------------------
   Echo.
 
-  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"
+  Rem End of function
+  Pause
 
 Goto End
 
-:ErrorMissingManifest
+:ErrorMissingFile
 
   Echo.
   Echo  ERROR: No manifest file in the temp folder...
   Echo.
   Echo ----------------------------------------------------------
   Echo.
+  Pause
 
 :End

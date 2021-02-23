@@ -31,5 +31,6 @@
   Echo ----------------------------------------------------------
   Echo.
 
-  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"
+  Rem End of function
+  Pause
 

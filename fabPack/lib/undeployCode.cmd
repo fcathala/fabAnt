@@ -7,11 +7,14 @@
   Echo.
 
   Rem All folders operations
-  If Not Exist metadata\temp\package.xml Goto ErrorMissingManifest
-  If Not Exist metadata\temp\destructiveChanges.xml Goto ErrorMissingManifest
+  If Not Exist metadata Md metadata
+  If Not Exist metadata\archive Md metadata\archive
   Md metadata\archive\%TimeStamp%-undeployCode
-  
-  Rem Call ant undeployCode -buildfile "lib\fabPack.xml" -propertyfile "lib\org.up.properties" -l "metadata\temp\log.txt"
+  If Not Exist metadata\temp Md metadata\temp
+  If Not Exist metadata\temp\package.xml Goto ErrorMissingFiles
+  If Not Exist metadata\temp\destructiveChanges.xml Goto ErrorMissingFiles
+
+  Call ant undeployCode -buildfile "lib\fabPack.xml" -propertyfile "lib\org.up.properties" -l "metadata\temp\log.txt"
  
   Rem Keep a copy of the result
   XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-undeployCode /S /Y
@@ -23,11 +26,12 @@
   Echo ----------------------------------------------------------
   Echo.
 
-  Choice /N /M "Are you ready to go back to the main screen? (Y/N)"
+  Rem End of function
+  Pause
 
 Goto End
 
-:ErrorMissingManifest
+:ErrorMissingFiles
 
   Echo.
   Echo  ERROR: No pair destructiveChanges.xml + package.xml

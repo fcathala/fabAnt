@@ -1,31 +1,20 @@
 Echo OFF
-Rem ===============================================================
+Rem =============================================================
 Rem fabPack_PC: Packaging Utility for Salesforce Professionals
 Rem
 Rem fabPack lets you download packages from one Salesforce org
 Rem and upload it into another one. It also helps you capture
-Rem metadata and build-up a library. It's a Salesforce Migration
-Rem Toolkit wrapper, so you need the Java and Ant stacks as well as
-Rem the force.com migration toolkit installed before using it.
+Rem metadata and build-up a library should you want to.
+Rem It's a Salesforce Migration Toolkit wrapper,
+Rem so you need the Java and Ant stacks as well as the force.com
+Rem migration toolkit installed before using it.
 Rem Once installed, then things will get easy.
 Rem fabPack saves time and reduces risk of manual mistakes.
 Rem
 Rem © Fabrice Cathala - February 2021
 Rem	Version: 2.0
 Rem
-Rem ===============================================================
-
-Rem ===============================================================
-Rem Initialisation
-Rem ===============================================================
-  Rem Just in case "Enables Command Extensions" 
-  SetLocal EnableExtensions
-
-  Rem Create the package download tree
-  If Not Exist metadata Md metadata
-  If Not Exist metadata\archive Md metadata\archive
-  If Not Exist metadata\temp Md metadata\temp
-Rem ===============================================================
+Rem =============================================================
 
 :Menu
   Rem ===========================================================
