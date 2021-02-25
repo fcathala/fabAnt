@@ -2,7 +2,7 @@
   Cls
   Echo.
   Echo ----------------------------------------------------------
-  Echo  fabPack - (5) Validate components on target
+  Echo  fabAnt - (5) Validate components on target
   Echo ----------------------------------------------------------
   Echo.
 
@@ -13,7 +13,7 @@
   If Not Exist metadata\temp Md metadata\temp
   If Not Exist metadata\temp\package.xml Goto ErrorMissingFile
 
-  Call ant deployCodeCheckOnly -buildfile "lib\fabPack.xml" -propertyfile "lib\org.up.properties" -l "metadata\temp\log.txt"
+  Call ant deployCodeCheckOnly -buildfile "lib\fabAnt.xml" -propertyfile "lib\org.up.properties" -l "metadata\temp\log.txt"
  
   Rem Keep a copy of the result
   XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-deployCodeCheckOnly /S /Y

@@ -2,7 +2,7 @@
   Cls
   Echo.
   Echo ----------------------------------------------------------
-  Echo  fabPack - (7) Delete components on target
+  Echo  fabAnt - (7) Delete components on target
   Echo ----------------------------------------------------------
   Echo.
 
@@ -14,7 +14,7 @@
   If Not Exist metadata\temp\package.xml Goto ErrorMissingFiles
   If Not Exist metadata\temp\destructiveChanges.xml Goto ErrorMissingFiles
 
-  Call ant undeployCode -buildfile "lib\fabPack.xml" -propertyfile "lib\org.up.properties" -l "metadata\temp\log.txt"
+  Call ant undeployCode -buildfile "lib\fabAnt.xml" -propertyfile "lib\org.up.properties" -l "metadata\temp\log.txt"
  
   Rem Keep a copy of the result
   XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-undeployCode /S /Y

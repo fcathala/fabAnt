@@ -2,7 +2,7 @@
   Cls
   Echo.
   Echo ----------------------------------------------------------
-  Echo  fabPack - (4) Download components from package
+  Echo  fabAnt - (4) Download components from package
   Echo ----------------------------------------------------------
   Echo.
 
@@ -13,7 +13,7 @@
   Rd metadata\temp /S /Q
   If Not Exist metadata\temp Md metadata\temp
 
-  Call ant retrievePkg -buildfile "lib\fabPack.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
+  Call ant retrievePkg -buildfile "lib\fabAnt.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
 
   Rem Keep a copy of the result
   XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-retrievePkg /S /Y

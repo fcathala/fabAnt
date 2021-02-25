@@ -2,7 +2,7 @@
   Cls
   Echo.
   Echo ----------------------------------------------------------
-  Echo  fabPack - (2) Retrieve all supported metadata types    
+  Echo  fabAnt - (2) Retrieve all supported metadata types    
   Echo ----------------------------------------------------------
   Echo.
 
@@ -11,7 +11,7 @@
   Md metadata\temp
   Md metadata\archive\%TimeStamp%-describeMetadata
 
-  Call ant describeMetadata -buildfile "lib\fabPack.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
+  Call ant describeMetadata -buildfile "lib\fabAnt.xml" -propertyfile "lib\org.down.properties" -l "metadata\temp\log.txt"
 
   Rem Keep a copy of the result
   XCopy metadata\temp\*.* metadata\archive\%TimeStamp%-describeMetadata /S /Y
