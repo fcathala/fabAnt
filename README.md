@@ -8,9 +8,9 @@
 
 **fabAnt** is based on the [Force.com Migration Toolkit](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm) hence will always remains compatible with the latest API version.
 
->**fabAnt** saves time and reduces risk of manual mistakes. I'm recommending it to any Salesforce implementation teams dealing with lot of packaging work or willing to build a code library.  
+>**fabAnt** saves time and reduces risk of manual mistakes. I'm recommending it to any Salesforce implementation teams dealing with lot of packaging work or willing to build a code library.
 >
 > *Ben N, Senior Salesforce Developer*
 
 The security policy is explained [here](https://github.com/fcathala/fabAnt/blob/master/SECURITY.md).
-During the upgrade to v2.0, you can find more details about this project [here](https://fabant.uk/).
+You can find more details about this project [here](https://fabant.uk/).
