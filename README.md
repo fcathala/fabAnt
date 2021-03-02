@@ -1,6 +1,6 @@
 # fabAnt
 
-*Packaging Utility for Salesforce Professionals - Fabrice Cathala - 13 October 2017, 23 February 2021*
+*Packaging utility for Salesforce professionals - Fabrice Cathala - 13 October 2017, 23 February 2021*
 
 ---
 
