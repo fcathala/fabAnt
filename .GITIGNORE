@@ -1,9 +1,17 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/ForceDotCom.gitignore
 
 # User-specific files
-
 .project
 .settings
 salesforce.schema
 .properties
+
+# Shared objects
+*.dll
+
+# Executables
+*.exe
+*.com
+
+# Windows
 desktop.ini
