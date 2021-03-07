@@ -1,6 +1,6 @@
 # fabAnt
 
-*Packaging utility for Salesforce professionals - Fabrice Cathala*
+*Packaging utility for Salesforce professionals - Fabrice Cathala 🐸*
 
 ---
 
