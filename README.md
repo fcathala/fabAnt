@@ -4,6 +4,12 @@
 
 ---
 
+> **Note from Salesforce**
+> The Ant Migration Tool is retired with Spring ’24. The tool continues to function for future API versions but isn’t updated with new functionality and isn’t supported. To manage metadata changes, switch to Salesforce CLI for a modern, supported developer experience.
+> [Read here](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm)
+
+I think it's still a good way to learn "*what's in the platform*" and understand the challenge of deployments but the best IMHO is not to waste time and move ASAP to [DX](https://www.salesforce.com/uk/products/platform/products/salesforce-dx/), if not not already done! 
+
 **fabAnt** is a simple but efficient packaging utility that simplify moving meta-data packages in between Salesforce orgs. It's built around Salesforce's Ant migration toolkit that it enhances with an old-fashioned script. With fabAnt you can build a package from a change set, pull down the metadata, tweak it and deploy to any org including back into the source. It's also a great way to **build a packages library**.
 
 **fabAnt** is based on the [Force.com Migration Toolkit](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm) hence will always remains compatible with the latest API version.
