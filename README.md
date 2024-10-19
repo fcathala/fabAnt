@@ -6,7 +6,7 @@
 
 > **Note from Salesforce**
 > The Ant Migration Tool is retired with Spring ’24. The tool continues to function for future API versions but isn’t updated with new functionality and isn’t supported. To manage metadata changes, switch to Salesforce CLI for a modern, supported developer experience.
-> [Read here](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm)
+> [Read here](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/meta_development.htm).
 
 I think it's still a good way to learn "*what's in the platform*" and understand the challenge of deployments but the best IMHO is not to waste time and move ASAP to [DX](https://www.salesforce.com/uk/products/platform/products/salesforce-dx/), if not not already done! 
 
